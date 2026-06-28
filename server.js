@@ -22,7 +22,7 @@ const CHUNK_DIFF_THRESHOLD = parseInt(process.env.rpilot_CHUNK_THRESHOLD || '800
 const AGENT_DIR = __dirname;
 const SCOPE_SCRIPT = path.join(AGENT_DIR, 'scripts', 'collect_review_scope.js');
 const UI_FILE = path.join(AGENT_DIR, 'ui', 'index.html');
-const SKILL_MD = path.join(AGENT_DIR, 'SKILL.md');
+const SKILL_MD = path.join(AGENT_DIR, 'skills', 'r-pilot', 'SKILL.md');
 const REPO_CWD = process.cwd();
 
 /** Detect the current git branch synchronously (best-effort). */

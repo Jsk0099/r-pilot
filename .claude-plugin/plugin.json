@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Automates review the code with role to review specific extension files",
   "author": {
-    "name": "r-pilot"
+    "name": "Jayraj",
+    "email": "jchocha@asite.com"
   },
   "hooks": "./hooks/claude-codex-hooks.json"
 }
