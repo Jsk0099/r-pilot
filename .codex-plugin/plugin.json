@@ -1,0 +1,27 @@
+{
+  "name": "r-pilot",
+  "version": "0.0.1",
+  "description": "Automates review the code with role to review specific extension files",
+  "author": {
+    "name": "Jayraj",
+    "email": "jchocha@asite.com"
+  },
+  "keywords": ["yagni", "minimalism", "code-review", "productivity"],
+  "skills": "./skills/",
+  "hooks": "./hooks/claude-codex-hooks.json",
+  "interface": {
+    "displayName": "R-Pilot",
+    "shortDescription": "Faster code review process",
+    "longDescription": "Automates review the code with role to review specific extension files.",
+    "developerName": "Jayraj",
+    "category": "Developement",
+    "capabilities": ["Instructions", "Lifecycle hooks"],
+    "defaultPrompt": [
+      "Review this diff for over-engineering.",
+      "Find the smallest correct implementation."
+    ],
+    "brandColor": "#111111",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  }
+}
