@@ -1,14 +1,13 @@
 {
     "hooks": {
-        "SessionStart": [
+        "UserPromptSubmit": [
             {
-                "matcher": "startup|resume|clear|compact",
                 "hooks": [
                 {
                     "type": "command",
-                    "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/launch.sh\"; exit 0",
-                    "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { \"$env:CLAUDE_PLUGIN_ROOT\\scripts\\launch.bat\" }",
-                    "timeout": 5,
+                    "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/launch.sh\"",
+                    "commandWindows": "\"%CLAUDE_PLUGIN_ROOT%\\scripts\\launch.bat\"",
+                    "timeout": 8,
                     "statusMessage": "Loading r pilot mode..."
                 }
                 ]

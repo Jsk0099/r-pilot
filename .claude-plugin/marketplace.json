@@ -11,8 +11,6 @@
       "name": "r-pilot",
       "description": "Automates review the code with role to review specific extension files",
       "source": "./",
-      "strict": false,
-      "skills": ["./skills/r-pilot"],
       "category": "development"
     }
   ]

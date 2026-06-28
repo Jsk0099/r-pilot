@@ -7,19 +7,17 @@ description: >
 
 # Review Pilot — Server Launch
 
-Start the Review Pilot server and open the browser UI. The UI collects all inputs and
-drives the complete review without any further chat interaction.
+The server and browser UI are started silently by the `UserPromptSubmit` hook when you
+type `/r-pilot` — no command is run from chat. The UI collects all inputs and drives the
+complete review without any further chat interaction.
 
-## Step 2 — Tell the user
+## Tell the user
 
-**If output contains `STARTED` or `ALREADY_RUNNING`:**
-> **Review Pilot is running at http://localhost:3922** — select your role and base branch in the browser, then click **Start Review**. Progress and results appear there. No further input needed here.
+Reply with exactly this — do not run any command:
 
-**If output contains `SERVER_NOT_FOUND`:**
-> Could not find the Review Pilot server script. You can still run a review by typing your request directly, for example: `$r-pilot Review UI developer changes against master base branch.`
-
-**If output contains `FAILED`:**
-> The server failed to start. Check `/tmp/r-pilot-server.log` for errors. You can still run a review by typing your request directly, for example: `$r-pilot Review UI developer changes against master base branch.`
+> **Review Pilot is starting at http://localhost:3922** — the browser UI should open in a moment. Select your role and base branch there, then click **Start Review**. Progress and results appear in the browser. No further input needed here.
+>
+> If the browser didn't open, check `/tmp/reviewpilot-server.log`.
 
 ---
 
