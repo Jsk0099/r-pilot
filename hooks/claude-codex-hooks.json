@@ -1,0 +1,18 @@
+{
+    "hooks": {
+        "SessionStart": [
+            {
+                "matcher": "startup|resume|clear|compact",
+                "hooks": [
+                {
+                    "type": "command",
+                    "command": "\"${CLAUDE_PLUGIN_ROOT}/scipts/launch.sh\"; exit 0",
+                    "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { \"$env:CLAUDE_PLUGIN_ROOT\\scipts\\launch.bat\" }",
+                    "timeout": 5,
+                    "statusMessage": "Loading r pilot mode..."
+                }
+                ]
+            }
+        ]
+    }
+}
